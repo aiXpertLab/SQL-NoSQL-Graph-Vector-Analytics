@@ -16,8 +16,6 @@ key_string = base64.urlsafe_b64encode(key_bytes).decode()
 # Save the key to a file
 with open('key.txt', 'w') as keyfile:
     keyfile.write(key_string)
-    
-
 
 uri = st.secrets["MONGO_URI"]
 
