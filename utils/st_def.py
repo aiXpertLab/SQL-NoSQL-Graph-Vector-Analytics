@@ -14,9 +14,12 @@ def st_sidebar():
     return openai_api_key
 
    
-def st_logo(title="OmniExtract!", page_title="Aritificial Intelligence"):
+def st_logo(title="OmniExtract!", page_title="Aritificial Intelligence", slogan=""):
     st.set_page_config(page_title,  page_icon="🚀",)
-    st.title(title)
+    # st.markdown("<h1 style='text-align: center;'></h1>",unsafe_allow_html=True)
+    st.markdown(f"<h1 style='text-align: center;'>{title}</h1>",unsafe_allow_html=True)
+
+    st.markdown(f"<h2 style='text-align: center;'>{slogan}</h2>",unsafe_allow_html=True)
 
     st.markdown(
     """
