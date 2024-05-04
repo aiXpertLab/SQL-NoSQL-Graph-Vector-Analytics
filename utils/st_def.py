@@ -25,7 +25,7 @@ def st_logo(title="OmniExtract!", page_title="Aritificial Intelligence", slogan=
     """
     <style>
         [data-testid="stSidebarNav"] {
-            background-image: url(https://hypech.com/images/logo/omniextract.png);
+            background-image: url(https://hypech.com/images/logo/aixpertlab_logo.png);
             background-size: 300px; /* Set the width and height of the image */
             background-repeat: no-repeat;
             padding-top: 40px;

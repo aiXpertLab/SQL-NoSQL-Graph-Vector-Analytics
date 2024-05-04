@@ -1,3 +1,8 @@
 streamlit
 streamlit_extras
-pymongo
+accelerate
+transformers
+scikit-learn
+plotly
+matplotlib
+seaborn
