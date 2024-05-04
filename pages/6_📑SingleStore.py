@@ -17,10 +17,11 @@ with tab1:
             with conn:
                 conn.autocommit(True)
                 with conn.cursor() as cur:
-                    cur.execute("""CREATE TABLE iris (sepal_length FLOAT,sepal_width FLOAT,petal_length FLOAT,petal_width FLOAT,species VARCHAR(20))""")
+                    cur.execute("""CREATE TABLE IF NOT EXISTS iris (sepal_length FLOAT,sepal_width FLOAT,petal_length FLOAT,petal_width FLOAT,species VARCHAR(20))""")
                     cur.executemany(stmt, df)
                     cur.execute("""SELECT * FROM iris""")
                     rows = cur.fetchall()
+
 
 
 with tab2:
